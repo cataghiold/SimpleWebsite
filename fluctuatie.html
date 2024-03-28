@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoCoins</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        main>.container {
+            padding: 60px 15px 0;
+        }
+        
+        .bg-btc {
+            background-color: #f2a900;
+            color: #4d4d4e
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-btc">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fab fa-bitcoin"></i> Crypto coins</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Acasa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="fluctuatie.html">Pret BTC</a>
+                        </li>
+                        <li class="nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link" href="despre.html">Despre BTC</a>
+                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="avantaje.html">Avantaje si dezavantaje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Plati.html">Cumpara Bitcoin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <div class="container">
+            <h3 class="text-center mt-5">
+                Fluctuatia BTC
+            </h3>
+            <form action="javascript:;" onsubmit="changeDate(this)" id="select_date">
+                <div class="row">
+                    <div class="col-md-5">
+                        <input class="form-control" value="2022-04-09" type="date" id="date_1">
+                    </div>
+                    <div class="col-md-5">
+                        <input class="form-control" value="2022-05-18" type="date" id="date_2">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn bg-btc text-white" type="submit" style="width:100%;">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div id="myfirstchart" style="height: 250px;"></div>
+
+            <hr>
+            <h5 class="text-center mt-5">
+                In prezent, un bitcoin este echivalentul a <span id="cat_bitcoin_acum"></span>$.
+            </h5>
+            <p>
+                În luna februarie a anului 2014 existau peste 12.000.000 bitcoini. La prețurile curente, valoarea cumulativă a monedelor Bitcoin emise (indicator echivalent cu capitalizarea de piață) depășește 7 miliarde USD.<br> Din ce în ce mai multe
+                firme încep să accepte această criptomonedă ca mijloc de plată, în schimbul de bunuri și servicii. La nivel global, în anul 2015, numărul de comercianți care acceptă Bitcoin a depășit 100 000.<br> Printre servicii se numără comerț electronic,
+                hoteluri și proprietăți, baruri și restaurante, servicii web/tech, site-uri de jocuri de noroc și pariuri sportive, publicitate etc. Mulți dintre aceștia reprezintă site-uri online, dar un număr mare de magazine fizice acceptă în prezent
+                această criptomonedă.<br> rintre marile companii care acceptă plăți în Bitcoin se numără Microsoft,Dell, Newegg, Virgin Galactic, Overstock, Showroomprive, TigerDirect, BTCTrip.<br> Economia Bitcoin este încă mică în relație cu economiile
+                stabilite cu mult timp în urmă iar programul este încă în stadiul beta de dezvoltare. Dar bunuri reale și servicii, cum ar fi mașini uzate și contracte pentru dezvoltare de software independent sunt acum tranzacționate. Bitcoinii sunt
+                acceptați atât pentru servicii online cât și pentru bunuri tangibile. Fundația pentru Software Liber și Singularity Institute, Electronic Frontier Foundation, Greenpeace, Mozilla Foundation, Wikimedia, Universitatea din Nicosia, acceptă
+                donații în Bitcoin. Comercianții schimbă diverse monede cum ar fi Dolari Americani (USD), Ruble Rusești (RUB) și Yeni Japonezi (JPY), etc. pe Bitcoini dar și invers. Aceste tranzacții au loc prin intermediul siturilor de schimb. Oricine
+                poate vedea lanțul de blocuri și să observe tranzacțiile în timp real. Diferite servicii facilitează asemenea monitorizări.<br> În comparație cu monedele convenționale, Bitcoin diferă prin faptul că nu există niciun supraveghetor care
+                să poată controla valoarea, datorită naturii lor descentralizate, atenuând posibile instabilități cauzate de bănci centrale. Inflația este limitată și controlată, programată în programul Bitcoin, dar este predictibilă și cunoscută tuturor
+                părților încă de la început. Așadar inflația nu poate fi manipulată central ca să afecteze redistribuirea de valoare de la utilizatorii obișnuiți. În loc de stimulentul creării de noi bitcoini pentru a înregistra tranzacțiile în blocuri,
+                nodurile din această perioadă se așteaptă să depindă de abilitatea lor de a concura liber în colectarea taxelor de procesare a tranzacțiilor.<br> Transferurile sunt facilitate direct fără ajutorul unui procesor de plăți între noduri. Acest
+                tip de tranzacții fac imposibilă anularea tranzacției. Clientul Bitcoin transmite tranzacția nodurilor apropiate care la rândul lor propagă tranzacția în rețea. Tranzacțiile corupte sau invalide sunt respinse de nodurile oneste. Tranzacțiile
+                sunt gratuite dar o taxă ar putea fi plătită altor noduri pentru a prioritiza procesarea tranzacției.<br> Numărul total de bitcoini tinde spre 21 de milioane în timp. Masa monetară crește ca serii geometrice la fiecare 21,000 de blocuri
+                (aproximativ la 4 ani); până în 2013 jumătate din masa monetară totală va fi generată, iar până în 2017, 3/4 va fi generată. În timp ce se apropie de acest număr valoarea bitcoin va simți o perioadă de deflație a prețurilor (creștere a
+                valorii bitcoin) datorită lipsei de noi introduceri de masă monetară. Bitcoinii sunt totuși divizibil la 8 decimale (permițând 2.1*1015 unități totale), eliminând limitațiile practice de ajustare a prețului în jos într-un mediu deflaționist.
+                În loc de a depinde de stimulentul creării de noi bitcoini pentru a înregistra tranzacțiile în blocuri, nodurile din aceasta perioadă este așteptat să depindă de abilitatea lor de a concura în colectarea taxelor pentru procesarea tranzacțiilor.<br>
+            </p>
+            <div class="text-center mb-5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Bitcoin_logo.svg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<script>
+    function getInfo() {
+        var btcData = [];
+        $.getJSON("https://api.coindesk.com/v1/bpi/historical/close.json", function(data) {
+            Object.keys(data.bpi).forEach(item => {
+                btcData.push({
+                    day: item,
+                    price: data.bpi[item]
+                })
+            });
+            console.log(btcData);
+            new Morris.Line({
+                element: 'myfirstchart',
+                data: btcData,
+                lineColors: ['#f2a900'],
+                xkey: 'day',
+                ykeys: ['price'],
+                labels: ['Price']
+            });
+        });
+
+        $.getJSON("https://api.coindesk.com/v1/bpi/currentprice.json", function(data) {
+            $('#cat_bitcoin_acum').text(data.bpi.USD.rate);
+        });
+    }
+    getInfo();
+
+    function changeDate(event) {
+        $('#myfirstchart').html('');
+        let date_1 = event.date_1.value;
+        let date_2 = event.date_2.value;
+        var btcData = [];
+
+        if (date_1 > date_2)
+            return alert('Va rugam ca prima data calendaristica sa fie mai veche decat cea de a doua!');
+
+        $.getJSON("https://api.coindesk.com/v1/bpi/historical/close.json?start=" + date_1 + "&end=" + date_2, function(data) {
+            Object.keys(data.bpi).forEach(item => {
+                btcData.push({
+                    day: item,
+                    price: data.bpi[item]
+                })
+            });
+            console.log(btcData);
+            new Morris.Line({
+                element: 'myfirstchart',
+                data: btcData,
+                lineColors: ['#f2a900'],
+                xkey: 'day',
+                ykeys: ['price'],
+                labels: ['Price']
+            });
+        });
+        //
+    }
+</script>
+
+</html>
